@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 @Path("/biblioteca")
 public class Biblioteca {
     
-    private String descrizionePredefinita;
-    private List<Libro> libri;
+    private final String descrizionePredefinita;
+    private final List<Libro> libri;
     
     public Biblioteca(String descrizionePredefinita) {
         this.descrizionePredefinita = descrizionePredefinita;
